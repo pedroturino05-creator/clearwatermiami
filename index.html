@@ -47,11 +47,11 @@ section{padding:64px 24px}
 .problems-section{background:var(--navy)}
 .problems-section .section-title{color:var(--white)}
 .problems-section .section-label{color:rgba(201,168,76,0.8)}
-.problems-grid{max-width:780px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.problem-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:20px}
+.problems-grid{max-width:780px;margin:0 auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.problem-card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px}
 .problem-icon{font-size:24px;margin-bottom:10px}
-.problem-title{font-size:14px;font-weight:600;color:rgba(255,255,255,0.9);margin-bottom:6px}
-.problem-desc{font-size:12px;color:rgba(255,255,255,0.55);line-height:1.6}
+.problem-title{font-size:14px;font-weight:600;color:var(--text-dark);margin-bottom:6px}
+.problem-desc{font-size:12px;color:var(--text-mid);line-height:1.6}
 .problem-arrow{text-align:center;color:var(--gold);font-size:20px;margin:24px 0 0}
 .solution-strip{background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:14px;padding:18px 24px;max-width:780px;margin:20px auto 0;text-align:center}
 .solution-strip p{font-size:14px;color:rgba(255,255,255,0.8);line-height:1.7}
@@ -173,13 +173,22 @@ section{padding:64px 24px}
   <div class="wave-icons">〜 〜 〜</div>
 </div>
  
-<!-- ═══════════ PROBLEMS ═══════════ -->
-<section class="problems-section">
-  <p class="section-label en">Sound Familiar?</p>
-  <p class="section-label es">¿Te Suena Familiar?</p>
-  <h2 class="section-title en">The Real Cost of No Membership</h2>
-  <h2 class="section-title es">El Costo Real de No Tener Membresía</h2>
-  <div class="divider" style="background:var(--gold)"></div>
+ 
+<!-- ═══════════ WHY BEATS ONE-TIME ═══════════ -->
+<section class="why-section">
+  <p class="section-label en">The Smart Choice</p>
+  <p class="section-label es">La Decisión Inteligente</p>
+  <h2 class="section-title en">Clearwater Membership vs. One-Time Services</h2>
+  <h2 class="section-title es">Membresía Clearwater vs. Servicios Sueltos</h2>
+  <div class="divider"></div>
+ 
+  <!-- Pain points integrated -->
+  <p style="text-align:center;font-size:13px;color:var(--text-dark);max-width:560px;margin:0 auto 28px;line-height:1.7;font-weight:500" class="en">
+    Without a membership, most boat owners deal with these problems every month:
+  </p>
+  <p style="text-align:center;font-size:13px;color:var(--text-dark);max-width:560px;margin:0 auto 28px;line-height:1.7;font-weight:500" class="es">
+    Sin membresía, la mayoría de los dueños de botes enfrentan estos problemas cada mes:
+  </p>
   <div class="problems-grid">
     <div class="problem-card">
       <div class="problem-icon">📞</div>
@@ -224,21 +233,11 @@ section{padding:64px 24px}
       <div class="problem-desc es">Una pequeña grieta, un fitting suelto, moho en el sentido — nadie lo ve. Hasta que es una reparación de $2,000 en lugar de $20.</div>
     </div>
   </div>
-  <div class="problem-arrow en">↓ There's a better way ↓</div>
-  <div class="problem-arrow es">↓ Hay una mejor manera ↓</div>
-  <div class="solution-strip">
-    <p class="en">A Clearwater membership means your boat is <strong>always clean, always protected, always ready</strong> — and someone professional is watching it every two weeks. You just show up and enjoy it.</p>
-    <p class="es">Una membresía Clearwater significa que tu bote siempre está <strong>limpio, protegido, listo</strong> — y alguien profesional lo revisa cada dos semanas. Tú solo llegas y lo disfrutas.</p>
-  </div>
-</section>
  
-<!-- ═══════════ WHY BEATS ONE-TIME ═══════════ -->
-<section class="why-section">
-  <p class="section-label en">The Smart Choice</p>
-  <p class="section-label es">La Decisión Inteligente</p>
-  <h2 class="section-title en">Membership vs. One-Time Services</h2>
-  <h2 class="section-title es">Membresía vs. Servicios Sueltos</h2>
-  <div class="divider"></div>
+  <div style="text-align:center;margin:28px 0 40px">
+    <span style="display:inline-block;background:var(--navy);color:var(--gold);font-size:13px;font-weight:600;padding:10px 24px;border-radius:30px" class="en">Clearwater solves all of this — here's how:</span>
+    <span style="display:inline-block;background:var(--navy);color:var(--gold);font-size:13px;font-weight:600;padding:10px 24px;border-radius:30px" class="es">Clearwater resuelve todo esto — así:</span>
+  </div>
  
   <div class="comparison-grid">
     <div class="comp-col bad">
@@ -333,6 +332,10 @@ section{padding:64px 24px}
             <li><span class="cross">✗</span><span class="en">Cabin / interior</span><span class="es">Cabina / interior</span></li>
             <li><span class="cross">✗</span><span class="en">Wax & metal polish</span><span class="es">Cera y pulido de metales</span></li>
           </ul>
+        </div>
+        <div style="padding:0 18px 18px;text-align:center">
+          <a href="https://wa.me/17865853770?text=Hi!%20I%27m%20interested%20in%20the%20Compact%20Plan%20-%20Up%20to%2025ft" class="en" style="display:inline-block;background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;padding:10px 20px;border-radius:30px;text-decoration:none;letter-spacing:0.04em">📱 I want this plan</a>
+          <a href="https://wa.me/17865853770?text=Hola!%20Me%20interesa%20el%20Plan%20Compact%20-%20Hasta%2025%20pies" class="es" style="display:inline-block;background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;padding:10px 20px;border-radius:30px;text-decoration:none;letter-spacing:0.04em">📱 Quiero este plan</a>
         </div>
       </div>
  
@@ -538,10 +541,10 @@ section{padding:64px 24px}
  
 <!-- ═══════════ HOW IT WORKS ═══════════ -->
 <section>
-  <p class="section-label en">Simple Process</p>
-  <p class="section-label es">Proceso Simple</p>
-  <h2 class="section-title en">How It Works</h2>
-  <h2 class="section-title es">Cómo Funciona</h2>
+  <p class="section-label en">That Easy</p>
+  <p class="section-label es">Así de Fácil</p>
+  <h2 class="section-title en">How Easy Is It to Work With Us?</h2>
+  <h2 class="section-title es">¿Qué Tan Fácil Es Trabajar Con Nosotros?</h2>
   <div class="divider"></div>
   <div class="steps-grid">
     <div>
